@@ -1,4 +1,4 @@
-﻿namespace SimpleReplacer
+namespace SimpleReplacer
 {
     partial class Form1
     {
@@ -31,11 +31,12 @@
             this.txtBefore = new System.Windows.Forms.TextBox();
             this.txtAfter = new System.Windows.Forms.TextBox();
             this.btnReplace = new System.Windows.Forms.Button();
+            this.txtConvFileName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtBefore
             // 
-            this.txtBefore.Location = new System.Drawing.Point(12, 12);
+            this.txtBefore.Location = new System.Drawing.Point(12, 47);
             this.txtBefore.MaxLength = 0;
             this.txtBefore.Multiline = true;
             this.txtBefore.Name = "txtBefore";
@@ -45,7 +46,7 @@
             // 
             // txtAfter
             // 
-            this.txtAfter.Location = new System.Drawing.Point(392, 12);
+            this.txtAfter.Location = new System.Drawing.Point(389, 49);
             this.txtAfter.MaxLength = 0;
             this.txtAfter.Multiline = true;
             this.txtAfter.Name = "txtAfter";
@@ -55,7 +56,7 @@
             // 
             // btnReplace
             // 
-            this.btnReplace.Location = new System.Drawing.Point(311, 12);
+            this.btnReplace.Location = new System.Drawing.Point(308, 47);
             this.btnReplace.Name = "btnReplace";
             this.btnReplace.Size = new System.Drawing.Size(75, 23);
             this.btnReplace.TabIndex = 2;
@@ -63,11 +64,21 @@
             this.btnReplace.UseVisualStyleBackColor = true;
             this.btnReplace.Click += new System.EventHandler(this.btnReplace_Click);
             // 
+            // txtConvFileName
+            // 
+            this.txtConvFileName.Location = new System.Drawing.Point(12, 12);
+            this.txtConvFileName.MaxLength = 0;
+            this.txtConvFileName.Name = "txtConvFileName";
+            this.txtConvFileName.Size = new System.Drawing.Size(669, 19);
+            this.txtConvFileName.TabIndex = 3;
+            this.txtConvFileName.Text = "replace_data.tsv";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 334);
+            this.ClientSize = new System.Drawing.Size(693, 369);
+            this.Controls.Add(this.txtConvFileName);
             this.Controls.Add(this.btnReplace);
             this.Controls.Add(this.txtAfter);
             this.Controls.Add(this.txtBefore);
@@ -83,6 +94,6 @@
         private System.Windows.Forms.TextBox txtBefore;
         private System.Windows.Forms.TextBox txtAfter;
         private System.Windows.Forms.Button btnReplace;
+        private System.Windows.Forms.TextBox txtConvFileName;
     }
 }
-
