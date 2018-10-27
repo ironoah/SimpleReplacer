@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +22,8 @@ namespace SimpleReplacer
         private void btnReplace_Click(object sender, EventArgs e)
         {
             string dirpath = @"";
-            string filename = "replace_data.tsv";
+            //string filename = "replace_data.tsv";
+            string filename = txtConvFileName.Text;
             string[] strReplArray = File.ReadAllLines(dirpath + filename, Encoding.UTF8);
 
             string strBuff = "";
