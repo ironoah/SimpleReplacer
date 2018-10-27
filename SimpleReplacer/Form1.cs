@@ -47,7 +47,7 @@ namespace SimpleReplacer
                 }
                 strBuff = strread.ToString();
             }
-            txtAfter.Text = strBuff;
+            txtAfter.Text = strBuff.TrimEnd();
         }
 
         private void txtBefore_KeyDown(object sender, KeyEventArgs e)
