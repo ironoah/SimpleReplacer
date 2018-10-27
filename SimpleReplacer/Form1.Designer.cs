@@ -41,7 +41,7 @@ namespace SimpleReplacer
             this.txtBefore.Multiline = true;
             this.txtBefore.Name = "txtBefore";
             this.txtBefore.Size = new System.Drawing.Size(290, 310);
-            this.txtBefore.TabIndex = 0;
+            this.txtBefore.TabIndex = 1;
             this.txtBefore.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBefore_KeyDown);
             // 
             // txtAfter
@@ -51,7 +51,7 @@ namespace SimpleReplacer
             this.txtAfter.Multiline = true;
             this.txtAfter.Name = "txtAfter";
             this.txtAfter.Size = new System.Drawing.Size(290, 310);
-            this.txtAfter.TabIndex = 1;
+            this.txtAfter.TabIndex = 2;
             this.txtAfter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAfter_KeyDown);
             // 
             // btnReplace
