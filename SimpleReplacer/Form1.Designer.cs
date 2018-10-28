@@ -32,6 +32,7 @@ namespace SimpleReplacer
             this.txtAfter = new System.Windows.Forms.TextBox();
             this.btnReplace = new System.Windows.Forms.Button();
             this.txtConvFileName = new System.Windows.Forms.TextBox();
+            this.chkRegex = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtBefore
@@ -73,11 +74,22 @@ namespace SimpleReplacer
             this.txtConvFileName.TabIndex = 3;
             this.txtConvFileName.Text = "replace_data.tsv";
             // 
+            // chkRegex
+            // 
+            this.chkRegex.AutoSize = true;
+            this.chkRegex.Location = new System.Drawing.Point(308, 91);
+            this.chkRegex.Name = "chkRegex";
+            this.chkRegex.Size = new System.Drawing.Size(56, 16);
+            this.chkRegex.TabIndex = 4;
+            this.chkRegex.Text = "Regex";
+            this.chkRegex.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 369);
+            this.Controls.Add(this.chkRegex);
             this.Controls.Add(this.txtConvFileName);
             this.Controls.Add(this.btnReplace);
             this.Controls.Add(this.txtAfter);
@@ -95,5 +107,6 @@ namespace SimpleReplacer
         private System.Windows.Forms.TextBox txtAfter;
         private System.Windows.Forms.Button btnReplace;
         private System.Windows.Forms.TextBox txtConvFileName;
+        private System.Windows.Forms.CheckBox chkRegex;
     }
 }
