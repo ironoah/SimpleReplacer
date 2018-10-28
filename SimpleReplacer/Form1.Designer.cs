@@ -95,7 +95,7 @@ namespace SimpleReplacer
             this.Controls.Add(this.txtAfter);
             this.Controls.Add(this.txtBefore);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SimpleReplacer";
             this.ResumeLayout(false);
             this.PerformLayout();
 
