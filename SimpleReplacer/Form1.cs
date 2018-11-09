@@ -27,7 +27,8 @@ namespace SimpleReplacer
 
         private string replaceRegex(string txtBefore)
         {
-            string dirpath = Environment.GetEnvironmentVariable("USERPROFILE") + @"\Desktop\";
+            //string dirpath = Environment.GetEnvironmentVariable("USERPROFILE") + @"\Desktop\";
+            string dirpath = @".\";
             string filename = txtConvFileName.Text; // TSV File
             string[] strReplArray = File.ReadAllLines(dirpath + filename, Encoding.UTF8);
 
@@ -50,7 +51,8 @@ namespace SimpleReplacer
         }
         private string replaceNormal(string txtBefore)
         {
-            string dirpath = Environment.GetEnvironmentVariable("USERPROFILE") + @"\Desktop\";
+            //string dirpath = Environment.GetEnvironmentVariable("USERPROFILE") + @"\Desktop\";
+            string dirpath = @".\";
             string filename = txtConvFileName.Text; // TSV File
             string[] strReplArray = File.ReadAllLines(dirpath + filename, Encoding.UTF8);
 
