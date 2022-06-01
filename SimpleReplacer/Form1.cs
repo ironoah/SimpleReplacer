@@ -84,13 +84,15 @@ namespace SimpleReplacer
 
         private void txtBefore_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Control && e.KeyCode == Keys.A)
+            if (e.Control && e.KeyCode == Keys.A) {
                 txtBefore.SelectAll();
+            }
         }
         private void txtAfter_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Control && e.KeyCode == Keys.A)
+            if (e.Control && e.KeyCode == Keys.A) {
                 txtAfter.SelectAll();
+            }
         }
     }
 }
